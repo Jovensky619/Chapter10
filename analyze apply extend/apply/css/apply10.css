@@ -54,25 +54,23 @@ button {
     height: 200px;
     background-color: #33091b;
     margin-left: 6%;
-	-webkit-animation-name: rule animation; 
-	animation-name: rule animation;
-	-webkit-animation-duration: 5s; 
+	animation-name: color;
 	animation-duration: 5s;
 }
 
 .square:hover{
-	transform: translateY(80px);
+	translate:80px;
 }
 
 /* Animation */
 @-webkit-keyframes color{
-from {background-color: #fbdae9;}
-to {background-color: #660b32;}
+	from {background-color: #fbdae9;}
+	to {background-color: #660b32;}
 }
 
 @keyframes color{
-	from {background-color: #fbdae9;}
-	 to{background-color: #660b32;}
+		from {background-color: #fbdae9;}
+		to{background-color: #660b32;}
 }
 
 /* Style rules for the footer */

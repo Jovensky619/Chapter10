@@ -6,7 +6,7 @@
     <title>Chapter 10, Extend</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="/analyze apply extend/extend/scripts/script.js"></script>
+    <script src="analyze apply extend/extend/scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
@@ -23,8 +23,25 @@
                 <p>I know how to add functionality to webpages with JavaScript.</p>
                 <p>I understand how to use the jQuery library.</p>
 
-                <button  id="hide">Hide</button>
-                <button  id="show">Show</button>
+                <button  id="btn">Hide</button>
+                <script>
+                    $(document).ready(function() {
+                    $("#btn").click(function() {
+                    $("p").hide();
+                        });
+                     // Hiding displayed paragraphs
+                    $("#hide").click(function() {
+                    $("button").hide();
+                        });
+                    });
+                
+                </script> 
+                <button id="btn">Show</button>  
+                <script>
+                    $("button").click(function(){
+                        $("p").show();
+                    });
+                </script>
 		
 		</article>
         
